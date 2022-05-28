@@ -6,23 +6,23 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="HCL Domino community container image">
+        <meta name="description" content="Howto run Domino Container Images on Docker">
       
       
       
-      <link rel="icon" href="/favicon.ico">
+      <link rel="icon" href="../favicon.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Domino Container</title>
+        <title>Run on Docker - Domino Container</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.c382b1dc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
         
           
           
@@ -41,7 +41,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,6 +64,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#how-run-this-image-on-docker" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -74,9 +79,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Domino Container" class="md-header__button md-logo" aria-label="Domino Container" data-md-component="logo">
+    <a href=".." title="Domino Container" class="md-header__button md-logo" aria-label="Domino Container" data-md-component="logo">
       
-  <img src="/assets/domino.svg" alt="logo">
+  <img src="../assets/domino.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -92,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Run on Docker
             
           </span>
         </div>
@@ -167,7 +172,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/." class="md-tabs__link">
+    <a href=".." class="md-tabs__link">
       Concept & Overview
     </a>
   </li>
@@ -179,7 +184,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/architecture/" class="md-tabs__link">
+    <a href="../architecture/" class="md-tabs__link">
       Architecture
     </a>
   </li>
@@ -191,7 +196,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/architecture_components/" class="md-tabs__link">
+    <a href="../architecture_components/" class="md-tabs__link">
       Components
     </a>
   </li>
@@ -203,7 +208,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/architecture_concept/" class="md-tabs__link">
+    <a href="../architecture_concept/" class="md-tabs__link">
       Conceptual details
     </a>
   </li>
@@ -215,7 +220,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/architecture_startup-cfg-flow/" class="md-tabs__link">
+    <a href="../architecture_startup-cfg-flow/" class="md-tabs__link">
       Startup & Config Flow
     </a>
   </li>
@@ -227,7 +232,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/concept_environments/" class="md-tabs__link">
+    <a href="../concept_environments/" class="md-tabs__link">
       Supported Environments
     </a>
   </li>
@@ -239,7 +244,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/concept_license/" class="md-tabs__link">
+    <a href="../concept_license/" class="md-tabs__link">
       Software Licenses
     </a>
   </li>
@@ -251,7 +256,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/howto/" class="md-tabs__link">
+    <a href="../howto/" class="md-tabs__link">
       Howto
     </a>
   </li>
@@ -263,7 +268,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/howto_docker-linux/" class="md-tabs__link">
+    <a href="../howto_docker-linux/" class="md-tabs__link">
       Docker on Linux
     </a>
   </li>
@@ -275,7 +280,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/howto_docker-run/" class="md-tabs__link">
+    <a href="../howto_docker-run/" class="md-tabs__link">
       Run Image on Docker
     </a>
   </li>
@@ -287,7 +292,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/howto_docker-wsl/" class="md-tabs__link">
+    <a href="../howto_docker-wsl/" class="md-tabs__link">
       Docker on WSL2
     </a>
   </li>
@@ -299,7 +304,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/howto_download-software/" class="md-tabs__link">
+    <a href="../howto_download-software/" class="md-tabs__link">
       Download Software
     </a>
   </li>
@@ -311,7 +316,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/howto_github/" class="md-tabs__link">
+    <a href="../howto_github/" class="md-tabs__link">
       Get GitHub project
     </a>
   </li>
@@ -323,7 +328,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/quickstart/" class="md-tabs__link">
+    <a href="../quickstart/" class="md-tabs__link">
       Quickstart
     </a>
   </li>
@@ -335,7 +340,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/reference/" class="md-tabs__link">
+    <a href="../reference/" class="md-tabs__link">
       Reference
     </a>
   </li>
@@ -347,7 +352,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/reference_build/" class="md-tabs__link">
+    <a href="../reference_build/" class="md-tabs__link">
       Build Commands
     </a>
   </li>
@@ -359,7 +364,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/reference_environment-vars/" class="md-tabs__link">
+    <a href="../reference_environment-vars/" class="md-tabs__link">
       Runtime Variables
     </a>
   </li>
@@ -371,7 +376,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/reference_startscript/" class="md-tabs__link">
+    <a href="../reference_startscript/" class="md-tabs__link">
       Domino Start Script
     </a>
   </li>
@@ -383,7 +388,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/run/" class="md-tabs__link">
+    <a href="../run/" class="md-tabs__link">
       Run Image
     </a>
   </li>
@@ -392,10 +397,12 @@
         
   
   
+    
+  
 
 
   <li class="md-tabs__item">
-    <a href="/run_docker/" class="md-tabs__link">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
       Run on Docker
     </a>
   </li>
@@ -422,9 +429,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Domino Container" class="md-nav__button md-logo" aria-label="Domino Container" data-md-component="logo">
+    <a href=".." title="Domino Container" class="md-nav__button md-logo" aria-label="Domino Container" data-md-component="logo">
       
-  <img src="/assets/domino.svg" alt="logo">
+  <img src="../assets/domino.svg" alt="logo">
 
     </a>
     Domino Container
@@ -452,7 +459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         Concept & Overview
       </a>
     </li>
@@ -467,7 +474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/architecture/" class="md-nav__link">
+      <a href="../architecture/" class="md-nav__link">
         Architecture
       </a>
     </li>
@@ -482,7 +489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/architecture_components/" class="md-nav__link">
+      <a href="../architecture_components/" class="md-nav__link">
         Components
       </a>
     </li>
@@ -497,7 +504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/architecture_concept/" class="md-nav__link">
+      <a href="../architecture_concept/" class="md-nav__link">
         Conceptual details
       </a>
     </li>
@@ -512,7 +519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/architecture_startup-cfg-flow/" class="md-nav__link">
+      <a href="../architecture_startup-cfg-flow/" class="md-nav__link">
         Startup & Config Flow
       </a>
     </li>
@@ -527,7 +534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/concept_environments/" class="md-nav__link">
+      <a href="../concept_environments/" class="md-nav__link">
         Supported Environments
       </a>
     </li>
@@ -542,7 +549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/concept_license/" class="md-nav__link">
+      <a href="../concept_license/" class="md-nav__link">
         Software Licenses
       </a>
     </li>
@@ -557,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/howto/" class="md-nav__link">
+      <a href="../howto/" class="md-nav__link">
         Howto
       </a>
     </li>
@@ -572,7 +579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/howto_docker-linux/" class="md-nav__link">
+      <a href="../howto_docker-linux/" class="md-nav__link">
         Docker on Linux
       </a>
     </li>
@@ -587,7 +594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/howto_docker-run/" class="md-nav__link">
+      <a href="../howto_docker-run/" class="md-nav__link">
         Run Image on Docker
       </a>
     </li>
@@ -602,7 +609,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/howto_docker-wsl/" class="md-nav__link">
+      <a href="../howto_docker-wsl/" class="md-nav__link">
         Docker on WSL2
       </a>
     </li>
@@ -617,7 +624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/howto_download-software/" class="md-nav__link">
+      <a href="../howto_download-software/" class="md-nav__link">
         Download Software
       </a>
     </li>
@@ -632,7 +639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/howto_github/" class="md-nav__link">
+      <a href="../howto_github/" class="md-nav__link">
         Get GitHub project
       </a>
     </li>
@@ -647,7 +654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/quickstart/" class="md-nav__link">
+      <a href="../quickstart/" class="md-nav__link">
         Quickstart
       </a>
     </li>
@@ -662,7 +669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/reference/" class="md-nav__link">
+      <a href="../reference/" class="md-nav__link">
         Reference
       </a>
     </li>
@@ -677,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/reference_build/" class="md-nav__link">
+      <a href="../reference_build/" class="md-nav__link">
         Build Commands
       </a>
     </li>
@@ -692,7 +699,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/reference_environment-vars/" class="md-nav__link">
+      <a href="../reference_environment-vars/" class="md-nav__link">
         Runtime Variables
       </a>
     </li>
@@ -707,7 +714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/reference_startscript/" class="md-nav__link">
+      <a href="../reference_startscript/" class="md-nav__link">
         Domino Start Script
       </a>
     </li>
@@ -722,7 +729,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/run/" class="md-nav__link">
+      <a href="../run/" class="md-nav__link">
         Run Image
       </a>
     </li>
@@ -735,11 +742,81 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/run_docker/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Run on Docker
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Run on Docker
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-run-this-image-on-docker" class="md-nav__link">
+    How run this image on Docker
+  </a>
+  
+    <nav class="md-nav" aria-label="How run this image on Docker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-new-container-from-an-image-manually" class="md-nav__link">
+    Creating a new container from an image manually
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#runtime-configuration" class="md-nav__link">
+    Runtime configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Runtime configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stopping-the-application-server-gracefully" class="md-nav__link">
+    Stopping the Application Server gracefully
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -762,6 +839,54 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-run-this-image-on-docker" class="md-nav__link">
+    How run this image on Docker
+  </a>
+  
+    <nav class="md-nav" aria-label="How run this image on Docker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-new-container-from-an-image-manually" class="md-nav__link">
+    Creating a new container from an image manually
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#runtime-configuration" class="md-nav__link">
+    Runtime configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Runtime configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stopping-the-application-server-gracefully" class="md-nav__link">
+    Stopping the Application Server gracefully
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -771,8 +896,56 @@
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
-  <h1>404 - Not found</h1>
+                
+  <a href="https://github.com/SmartCloud-y/domino-container/tree/develop/edit/master/docs/run_docker.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
 
+
+
+  <h1>Run on Docker</h1>
+
+<h2 id="how-run-this-image-on-docker">How run this image on Docker<a class="headerlink" href="#how-run-this-image-on-docker" title="Permanent link">&para;</a></h2>
+<p>When a new container is created from the HCL Domino Container image, it takes <a href="../reference_environment-vars/">environment variables</a> into account for auto-configuring the Domino server.
+Details on how to use those variables can be found <a href="../reference_environment-vars/">here</a></p>
+<p>The Domino data directory needs to be a persistent volume. On Docker it will be automatically created.
+You can also use an existing volume. All volume types your container infrastructure supports can be used.</p>
+<h3 id="creating-a-new-container-from-an-image-manually">Creating a new container from an image manually<a class="headerlink" href="#creating-a-new-container-from-an-image-manually" title="Permanent link">&para;</a></h3>
+<p>Run a new Domino server with the configuration details of your choice.
+Make sure to specify the base image name at the very end of this command.</p>
+<p>Note: For values containing blanks use quotes around the whole env parameter!</p>
+<div class="highlight"><pre><span></span><code>docker run -it <span class="se">\</span>
+     -e <span class="nv">SetupAutoConfigure</span><span class="o">=</span><span class="m">1</span> <span class="se">\</span>
+     -e <span class="nv">SERVERSETUP_SERVER_TYPE</span><span class="o">=</span>first <span class="se">\</span>
+     -e <span class="nv">SERVERSETUP_ADMIN_FIRSTNAME</span><span class="o">=</span>John <span class="se">\</span>
+     -e <span class="nv">SERVERSETUP_ADMIN_LASTNAME</span><span class="o">=</span>Doe <span class="se">\</span>
+     -e <span class="nv">SERVERSETUP_ADMIN_PASSWORD</span><span class="o">=</span>domino4ever <span class="se">\</span>
+     -e <span class="nv">SERVERSETUP_ADMIN_IDFILEPATH</span><span class="o">=</span>admin.id <span class="se">\</span>
+     -e <span class="nv">SERVERSETUP_ORG_CERTIFIERPASSWORD</span><span class="o">=</span>domino4ever <span class="se">\</span>
+     -e <span class="nv">SERVERSETUP_SERVER_DOMAINNAME</span><span class="o">=</span>DominoDemo <span class="se">\</span>
+     -e <span class="nv">SERVERSETUP_ORG_ORGNAME</span><span class="o">=</span>Domino-Demo <span class="se">\</span>
+     -e <span class="nv">SERVERSETUP_SERVER_NAME</span><span class="o">=</span>domino-demo-v12 <span class="se">\</span>
+     -e <span class="nv">SERVERSETUP_NETWORK_HOSTNAME</span><span class="o">=</span>domino.acme.com <span class="se">\</span>
+    -h domino.acme.com <span class="se">\</span>
+    -p <span class="m">80</span>:80 <span class="se">\</span>
+    -p <span class="m">1352</span>:1352 <span class="se">\</span>
+    -v dominodata_demo:/local/notesdata <span class="se">\</span>
+    --stop-timeout<span class="o">=</span><span class="m">60</span> <span class="se">\</span>
+    --name domino12 <span class="se">\</span>
+    hclcom/domino:latest
+</code></pre></div>
+<h2 id="runtime-configuration">Runtime configuration<a class="headerlink" href="#runtime-configuration" title="Permanent link">&para;</a></h2>
+<p>During <code>docker run</code> you can setup a volume that mounts property files into <code>/local/notesdata</code></p>
+<h3 id="stopping-the-application-server-gracefully">Stopping the Application Server gracefully<a class="headerlink" href="#stopping-the-application-server-gracefully" title="Permanent link">&para;</a></h3>
+<p>Stopping a Domino server takes longer than the time a Docker server would expect by default (<strong>10 seconds</strong>), the recommended way is to add the parameter <code>--stop-timeout</code> already when starting the container.
+If the container was started with the parameter <code>--stop-timeout=</code> then you may stop the container using the following command:</p>
+<p><code>docker stop &lt;container-name&gt;</code></p>
+<p>If the container was started without specifying the parameter <code>--stop-timeout=</code> then use the following command to stop the container gracefully</p>
+<p><code>docker stop --time=&lt;timeout&gt; &lt;container-name&gt;</code></p>
+<p>Example:</p>
+<p><code>docker stop --time=60 test</code></p>
+
+              
             </article>
           </div>
         </div>
@@ -780,6 +953,26 @@
       </main>
       
         <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../run/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Run Image" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Run Image
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -796,10 +989,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs", "navigation.sections", "toc.follow"], "search": "/assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.follow"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.a6c66575.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>
