@@ -1,67 +1,120 @@
 ---
-layout: default
-title: "Concept & Overview"
-nav_order: 1
-description: "HCL Domino Container"
-has_children: true
+title: "Quickstart"
+description: "HCL Domino Container Quickstart"
 ---
 
-[Quickstart](quickstart.md){: .btn }
-[View it on GitHub](https://github.com/HCL-TECH-SOFTWARE/domino-container){: .btn }
+The default configuration should work for most environments.  
+For special requirements check the documentation for details.
 
----
+## Ensure you have a supported build environment
 
-# Domino Container
+The project supports most Unix base environments including [Windows Subsystem for Linux 2 WSL2](https://docs.microsoft.com/en-us/windows/wsl/)
 
-This project contains build scripts for HCL Domino Docker/Container images via [dockerfiles](https://docs.docker.com/engine/reference/builder/).
-The repository provides the utilities to build HCL Domino Server with the latest software or specific version in a Docker/Container image.
-There are separate folders within this repository for Domino add-on HCL products like Traveler and HCL Domino Volt as well.
+For details check [supported run-time and build environments](concept_environments.md)
 
-All required HCL web-kits and fixes are downloaded from a software repository server instead of adding the source installation files to the image directly.
-If no remote server is referenced a temporary local [NGINX container](https://hub.docker.com/_/nginx) is started at build time to act as a **software repository server**.
+## Clone this project via Git
 
-## Supported environments
+### Install Git software
 
-The project is supported on Docker Desktop, Docker Server, Podman, Rancher Desktop, Kubernetes (K8s) and OpenShift.
-See detailed information about [supported run-time and build environments](concept_environments.md)
+Git is a very simple and convenient way to download from GitHub.
+The install command depends on the platform (SUSE: zypper, Ubuntu: apt).
+"yum" works for any Redhat/CentOS based distribution.
 
-## Where to get HCL Domino software
+```
+yum install git -y
+```
 
-The project uses the official HCL web-kit installers to build container images download from the official HCL Flexnet repository.
+### Create new main directory for the project
 
-- All HCL customers with active maintenance should have a download account for [HCL Flexnet software portal](https://hclsoftware.flexnetoperations.com/flexnet/operationsportal)
-- HCL Business Partners with the [Partner Pack](https://www.hcltechsw.com/resources/partner-connect/resources/partner-pack) can download software in a similar way
+Create a directory where to download Git projects and switch to it.
 
-See how to [download software](howto_download-software.md) for details.
+Example:
 
-## How to download this project
+```
+mkdir -p /local/github
+cd /local/github
+```
 
-We recommend to download the GitHub project directly via git.  
-An alternate way is to download the project via ZIP file from the respository page.
+### Clone the repository and switch to the directory
 
-See Howto [Get Domino Container GitHub Repo](howto_github.md) for details.
+```
+git clone https://github.com/HCL-TECH-SOFTWARE/domino-container.git 
+cd domino-container
+```
 
-## Building the image(s)
+## Download software from Flexnet
 
-To build the latest available image
+Before starting the build process, the required HCL web-kits have to be available on the build machine or a remote download location - if configured.  
 
-1. Download the required software packages to the 'software' directory
-2. From the root folder of this repository issue the following command
+See howto [download software](howto_download-software.md) for details downloading software from Flexnet.
 
-```bash
+## Build the image
+
+```
 ./build domino
 ```
 
-The process will perform all required actions to create the image in the version requested. Usually it takes ~5 to ~8 minutes to build the image (depending on your CPU & disk performance).
+## Run container Domino Container Script
 
-Once you have built the Domino base image, you can build add-on images on top if it.  
-The add-on application is another layer on top of the Domino image.
+The Nash!Com Domino container script allows you to operate your server. It supports Docker and Podman run-time environments.
 
-Add-on images always need to be derived from the Domino base image.
+### Install Domino Container script
 
-There are currently two add-on images available:
+```
+../start_script/install_domino_container
+```
 
-* ```./build traveler``` - Traveler on Domino
-* ```./build volt``` - Volt on Domino
+### Configure your container
 
-Refer to Howto [Run Domino Container GitHub Repo](run_docker.md) how to run a Domino Container on Docker.
+The project provides a default configuration.
+Usually the default configuration should work for your environment.
+You might want to change the container name and other detailed settings.
+
+
+```
+domino_container cfg
+```
+
+**Note:** The container script by default uses `vi` for editing.
+If you prefer a different editor like `nano` or `mcedit` export an environment variable specifying an installed editor of your choice.
+Tip: You can also add the variable to your bash profile.
+
+```
+export EDIT_COMMAND=nano
+```
+
+### Configure container setup
+
+Usually environment variables are used for setup.
+The following commands opens the environment file, configured for your container.
+
+```
+domino_container env
+```
+
+## Start Domino container
+
+After specifying the configuration and setup correctly, start the container with the Domino container script.
+
+```
+domino_container start
+```
+
+### Domino live console
+
+To start a Domino live console, run the console command.
+The domino_container script leverages and `exec` command into the container.
+The long version of this command would be `domino_container domino console`.
+
+All console commands can be executed via `domino`.
+This command passes command line parameters to the `domino` start script.
+
+```
+domino_container console
+
+```
+
+## Domino Container Script Diagram
+
+
+![domino_container script diagram](plantuml/out/containerstartscript.svg)

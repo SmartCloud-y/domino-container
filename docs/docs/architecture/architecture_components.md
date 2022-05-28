@@ -110,4 +110,4 @@ Nash!Com Domino start and management script which supports Docker and contains a
 
 ## Digram of all directories and components
 
-![domino_container script diagram](assets/images/svg/projectstructure.svg)
+![domino_container script diagram](../plantuml/out/projectstructure.svg)
