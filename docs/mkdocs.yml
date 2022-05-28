@@ -1,6 +1,6 @@
 site_name: Domino Container
 site_description: HCL Domino community container image
-repo_url: https://github.com/SmartCloud-y/domino-container/tree/develop
+repo_url: https://github.com/SmartCloud-y/domino-container
 
 theme:
   name: material
@@ -10,9 +10,9 @@ theme:
     - navigation.tabs
     #- navigation.instant
     - navigation.sections
-    #- navigation.expand
+    - navigation.expand
     - toc.integrate
-    - toc.follow
+    #- toc.follow
   palette: 
     primary: white
 
