@@ -5,6 +5,7 @@ repo_url: https://github.com/SmartCloud-y/domino-container/tree/develop
 theme:
   name: material
   logo: assets/domino.svg
+  favicon: favicon.ico
   features:
     - navigation.tabs
     #- navigation.instant

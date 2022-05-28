@@ -1,3 +1,4 @@
 software/*.tar
 software/*.zip
 !*.md
+.python-version
