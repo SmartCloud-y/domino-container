@@ -6,23 +6,23 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="HCL Domino community container image">
+        <meta name="description" content="Docker on WSL2">
       
       
       
-      <link rel="icon" href="/favicon.ico">
+      <link rel="icon" href="../../favicon.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Domino Container</title>
+        <title>Docker on WSL2 - Domino Container</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.c382b1dc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c382b1dc.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
         
           
           
@@ -41,7 +41,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,6 +64,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#introduction" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -74,9 +79,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Domino Container" class="md-header__button md-logo" aria-label="Domino Container" data-md-component="logo">
+    <a href="../.." title="Domino Container" class="md-header__button md-logo" aria-label="Domino Container" data-md-component="logo">
       
-  <img src="/assets/domino.svg" alt="logo">
+  <img src="../../assets/domino.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -92,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Docker on WSL2
             
           </span>
         </div>
@@ -134,7 +139,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/quickstart/" class="md-tabs__link">
+    <a href="../../quickstart/" class="md-tabs__link">
       Quickstart
     </a>
   </li>
@@ -149,7 +154,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/concept-overview/" class="md-tabs__link">
+      <a href="../../concept-overview/" class="md-tabs__link">
         Concept & overview
       </a>
     </li>
@@ -165,7 +170,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/run/run_docker/" class="md-tabs__link">
+      <a href="../../run/run_docker/" class="md-tabs__link">
         Run image
       </a>
     </li>
@@ -181,7 +186,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/architecture/architecture_components/" class="md-tabs__link">
+      <a href="../../architecture/architecture_components/" class="md-tabs__link">
         Architecture
       </a>
     </li>
@@ -197,7 +202,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/reference/reference_build/" class="md-tabs__link">
+      <a href="../../reference/reference_build/" class="md-tabs__link">
         Reference
       </a>
     </li>
@@ -207,13 +212,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="/howto/howto_docker-linux/" class="md-tabs__link">
+      <a href="../howto_docker-linux/" class="md-tabs__link md-tabs__link--active">
         Howto
       </a>
     </li>
@@ -243,9 +250,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Domino Container" class="md-nav__button md-logo" aria-label="Domino Container" data-md-component="logo">
+    <a href="../.." title="Domino Container" class="md-nav__button md-logo" aria-label="Domino Container" data-md-component="logo">
       
-  <img src="/assets/domino.svg" alt="logo">
+  <img src="../../assets/domino.svg" alt="logo">
 
     </a>
     Domino Container
@@ -273,7 +280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/quickstart/" class="md-nav__link">
+      <a href="../../quickstart/" class="md-nav__link">
         Quickstart
       </a>
     </li>
@@ -314,7 +321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/concept-overview/" class="md-nav__link">
+      <a href="../../concept-overview/" class="md-nav__link">
         Concept & Overview
       </a>
     </li>
@@ -328,7 +335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/concept-overview/concept_environments/" class="md-nav__link">
+      <a href="../../concept-overview/concept_environments/" class="md-nav__link">
         Supported Environments
       </a>
     </li>
@@ -342,7 +349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/concept-overview/concept_license/" class="md-nav__link">
+      <a href="../../concept-overview/concept_license/" class="md-nav__link">
         Software Licenses
       </a>
     </li>
@@ -390,7 +397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/run/run_docker/" class="md-nav__link">
+      <a href="../../run/run_docker/" class="md-nav__link">
         Run on Docker
       </a>
     </li>
@@ -438,7 +445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/architecture/architecture_components/" class="md-nav__link">
+      <a href="../../architecture/architecture_components/" class="md-nav__link">
         Components
       </a>
     </li>
@@ -452,7 +459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/architecture/architecture_concept/" class="md-nav__link">
+      <a href="../../architecture/architecture_concept/" class="md-nav__link">
         Conceptual details
       </a>
     </li>
@@ -466,7 +473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/architecture/architecture_startup-cfg-flow/" class="md-nav__link">
+      <a href="../../architecture/architecture_startup-cfg-flow/" class="md-nav__link">
         Startup & Config Flow
       </a>
     </li>
@@ -514,7 +521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/reference/reference_build/" class="md-nav__link">
+      <a href="../../reference/reference_build/" class="md-nav__link">
         Build Commands
       </a>
     </li>
@@ -528,7 +535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/reference/reference_environment-vars/" class="md-nav__link">
+      <a href="../../reference/reference_environment-vars/" class="md-nav__link">
         Runtime Variables
       </a>
     </li>
@@ -542,7 +549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/reference/reference_startscript/" class="md-nav__link">
+      <a href="../../reference/reference_startscript/" class="md-nav__link">
         Domino Start Script
       </a>
     </li>
@@ -562,12 +569,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
       
       
       
@@ -590,7 +599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/howto/howto_docker-linux/" class="md-nav__link">
+      <a href="../howto_docker-linux/" class="md-nav__link">
         Docker on Linux
       </a>
     </li>
@@ -604,7 +613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/howto/howto_docker-run/" class="md-nav__link">
+      <a href="../howto_docker-run/" class="md-nav__link">
         Run Image on Docker
       </a>
     </li>
@@ -616,11 +625,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/howto/howto_docker-wsl/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Docker on WSL2
       </a>
+      
     </li>
   
 
@@ -632,7 +651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/howto/howto_download-software/" class="md-nav__link">
+      <a href="../howto_download-software/" class="md-nav__link">
         Download Software
       </a>
     </li>
@@ -646,7 +665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/howto/howto_github/" class="md-nav__link">
+      <a href="../howto_github/" class="md-nav__link">
         Get GitHub project
       </a>
     </li>
@@ -671,8 +690,96 @@
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
-  <h1>404 - Not found</h1>
+                
+  <a href="https://github.com/SmartCloud-y/domino-container/tree/develop/edit/master/docs/howto/howto_docker-wsl.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
 
+
+
+<h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h1>
+<p>Microsoft offers <a href="https://docs.microsoft.com/en-us/windows/wsl/">WSL2</a> a very interesting Linux integration platform,
+which is very convenient and flexible for local build and run-time environments.
+It can be used as build and run-time environmen for Domino on Docker.</p>
+<p>The most flexible setup is to run one of the standard Linux distributions and install a Docker Linux host on the WSL2 instance.
+WSL2 is also used in current Docker Desktop installations. Important for a build environment is any Docker or Podman installation with Bash support.</p>
+<h1 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h1>
+<p>Ensure you run at least</p>
+<ul>
+<li>Windows 10 version 2004 or higher</li>
+<li>Windows 11</li>
+<li>Windows 2022</li>
+</ul>
+<h1 id="install-wsl2">Install WSL2<a class="headerlink" href="#install-wsl2" title="Permanent link">&para;</a></h1>
+<p>Today WSL2 should be the default for each new installation.
+In case you are running the older WSL version, you have to switch to WSL2.
+Refer to details in the reference link below.</p>
+<div class="highlight"><pre><span></span><code>wsl --install
+</code></pre></div>
+<h1 id="install-linux-distribution">Install Linux Distribution<a class="headerlink" href="#install-linux-distribution" title="Permanent link">&para;</a></h1>
+<p>Once WSL2 is installed, WSL can list all available Linux distributions.</p>
+<p>For SUSE Linux installations it is recommended to install the SUSE Leap 15.3 version directly from the Microsoft online app store.
+The versions listed in WSL are outdated.</p>
+<h2 id="list-available-images">List available images<a class="headerlink" href="#list-available-images" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>wsl --list --online
+</code></pre></div>
+<h2 id="install-ubuntu-2004-lts">Install Ubuntu 20.04 LTS<a class="headerlink" href="#install-ubuntu-2004-lts" title="Permanent link">&para;</a></h2>
+<p>WSL offers automatic installations of selected distributions:</p>
+<div class="highlight"><pre><span></span><code>wsl --install -d Ubuntu-20.04
+</code></pre></div>
+<p>Once Ubuntu ist installed, it can be launched in multiple ways:</p>
+<ul>
+<li>Desktop/taskbar icon</li>
+<li><code>wsl</code> command line</li>
+<li>Software like <a href="https://mobaxterm.mobatek.net/">MobaXterm</a> with WSL integration</li>
+</ul>
+<h2 id="create-a-new-user">Create a new user<a class="headerlink" href="#create-a-new-user" title="Permanent link">&para;</a></h2>
+<p>When the container is launched for the first time, it asks to create a new user.
+For a Domino on Docker environment the best first user is <code>notes</code>.</p>
+<p>On Ubuntu the <code>root</code> user can be switched to via <code>sudo su -</code> specifying your <code>notes</code> user password.</p>
+<div class="highlight"><pre><span></span><code>sudo su -
+</code></pre></div>
+<h2 id="update-ubuntu">Update Ubuntu<a class="headerlink" href="#update-ubuntu" title="Permanent link">&para;</a></h2>
+<p>The installed WSL Linux instance is not up to date after installtion.</p>
+<div class="highlight"><pre><span></span><code>apt update
+apt uprade
+</code></pre></div>
+<h2 id="install-docker-server">Install Docker Server<a class="headerlink" href="#install-docker-server" title="Permanent link">&para;</a></h2>
+<p>Once updated the repository contains the Docker server.
+Install the server using the following command.</p>
+<div class="highlight"><pre><span></span><code>apt install docker.io
+</code></pre></div>
+<p>Linux distributions running on WSL don't provide systemd by default.<br />
+Therfore the Docker daemon is not started automatically.
+The Domino Container script provides an option to start/stop the Docker server.</p>
+<h2 id="install-jq">Install JQ<a class="headerlink" href="#install-jq" title="Permanent link">&para;</a></h2>
+<p>JQ is the standard tool for working with JSON files.<br />
+The domino_container scripts leverage JQ, which is included in all major distributions including Ubuntu.</p>
+<div class="highlight"><pre><span></span><code>apt install jq
+</code></pre></div>
+<h2 id="clone-docker-container-project">Clone Docker Container Project<a class="headerlink" href="#clone-docker-container-project" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>mkdir -p /local/github
+cd /local/github
+git clone https://github.com/HCL-TECH-SOFTWARE/domino-container.git 
+cd domino-container
+</code></pre></div>
+<h2 id="install-nashcom-domino-container-script">Install Nash!Com Domino Container Script<a class="headerlink" href="#install-nashcom-domino-container-script" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>./start_script/install_domino_container
+</code></pre></div>
+<h2 id="start-the-docker-server">Start the Docker server<a class="headerlink" href="#start-the-docker-server" title="Permanent link">&para;</a></h2>
+<p>Once installed the <code>domino_container</code> script can start and stop the Docker server for you.</p>
+<div class="highlight"><pre><span></span><code>domino_container docker start
+</code></pre></div>
+<h2 id="check-the-docker-client-and-server-version">Check the Docker Client and Server Version<a class="headerlink" href="#check-the-docker-client-and-server-version" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>docker version
+</code></pre></div>
+<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
+<p>This completes the setup for your Docker environment.</p>
+<p>Contine with <a href="quickstart.md">Quickstart</a> to build and run your first container.</p>
+<h2 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h2>
+<p><a href="https://docs.microsoft.com/en-us/windows/wsl/install">Microsoft WSL2 install documentation</a>.</p>
+
+              
             </article>
           </div>
         </div>
@@ -680,6 +787,41 @@
       </main>
       
         <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../howto_docker-run/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Run Image on Docker" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Run Image on Docker
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../howto_download-software/" class="md-footer__link md-footer__link--next" aria-label="Next: Download Software" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Download Software
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -696,10 +838,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "toc.follow"], "search": "/assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "toc.follow"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.a6c66575.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

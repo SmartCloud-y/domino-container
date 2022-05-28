@@ -6,23 +6,23 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="HCL Domino Quickstart">
+        <meta name="description" content="Container build commands">
       
       
       
-      <link rel="icon" href="../favicon.ico">
+      <link rel="icon" href="../../favicon.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Quickstart - Domino Container</title>
+        <title>Build Commands - Domino Container</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c382b1dc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
         
           
           
@@ -41,7 +41,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ensure-you-have-a-supported-build-environment" class="md-skip">
+        <a href="#build-command-documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -79,9 +79,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Domino Container" class="md-header__button md-logo" aria-label="Domino Container" data-md-component="logo">
+    <a href="../.." title="Domino Container" class="md-header__button md-logo" aria-label="Domino Container" data-md-component="logo">
       
-  <img src="../assets/domino.svg" alt="logo">
+  <img src="../../assets/domino.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Quickstart
+              Build Commands
             
           </span>
         </div>
@@ -136,12 +136,10 @@
         
   
   
-    
-  
 
 
   <li class="md-tabs__item">
-    <a href="./" class="md-tabs__link md-tabs__link--active">
+    <a href="../../quickstart/" class="md-tabs__link">
       Quickstart
     </a>
   </li>
@@ -156,7 +154,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../concept-overview/" class="md-tabs__link">
+      <a href="../../concept-overview/" class="md-tabs__link">
         Concept & overview
       </a>
     </li>
@@ -172,7 +170,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../run/run_docker/" class="md-tabs__link">
+      <a href="../../run/run_docker/" class="md-tabs__link">
         Run image
       </a>
     </li>
@@ -188,7 +186,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../architecture/architecture_components/" class="md-tabs__link">
+      <a href="../../architecture/architecture_components/" class="md-tabs__link">
         Architecture
       </a>
     </li>
@@ -198,13 +196,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../reference/reference_build/" class="md-tabs__link">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
         Reference
       </a>
     </li>
@@ -220,7 +220,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../howto/howto_docker-linux/" class="md-tabs__link">
+      <a href="../../howto/howto_docker-linux/" class="md-tabs__link">
         Howto
       </a>
     </li>
@@ -250,9 +250,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Domino Container" class="md-nav__button md-logo" aria-label="Domino Container" data-md-component="logo">
+    <a href="../.." title="Domino Container" class="md-nav__button md-logo" aria-label="Domino Container" data-md-component="logo">
       
-  <img src="../assets/domino.svg" alt="logo">
+  <img src="../../assets/domino.svg" alt="logo">
 
     </a>
     Domino Container
@@ -278,157 +278,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Quickstart
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../quickstart/" class="md-nav__link">
         Quickstart
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ensure-you-have-a-supported-build-environment" class="md-nav__link">
-    Ensure you have a supported build environment
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#clone-this-project-via-git" class="md-nav__link">
-    Clone this project via Git
-  </a>
-  
-    <nav class="md-nav" aria-label="Clone this project via Git">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#install-git-software" class="md-nav__link">
-    Install Git software
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-new-main-directory-for-the-project" class="md-nav__link">
-    Create new main directory for the project
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#clone-the-repository-and-switch-to-the-directory" class="md-nav__link">
-    Clone the repository and switch to the directory
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#download-software-from-flexnet" class="md-nav__link">
-    Download software from Flexnet
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#build-the-image" class="md-nav__link">
-    Build the image
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#run-container-domino-container-script" class="md-nav__link">
-    Run container Domino Container Script
-  </a>
-  
-    <nav class="md-nav" aria-label="Run container Domino Container Script">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#install-domino-container-script" class="md-nav__link">
-    Install Domino Container script
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-your-container" class="md-nav__link">
-    Configure your container
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-container-setup" class="md-nav__link">
-    Configure container setup
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#start-domino-container" class="md-nav__link">
-    Start Domino container
-  </a>
-  
-    <nav class="md-nav" aria-label="Start Domino container">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#domino-live-console" class="md-nav__link">
-    Domino live console
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#domino-container-script-diagram" class="md-nav__link">
-    Domino Container Script Diagram
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -467,7 +321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concept-overview/" class="md-nav__link">
+      <a href="../../concept-overview/" class="md-nav__link">
         Concept & Overview
       </a>
     </li>
@@ -481,7 +335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concept-overview/concept_environments/" class="md-nav__link">
+      <a href="../../concept-overview/concept_environments/" class="md-nav__link">
         Supported Environments
       </a>
     </li>
@@ -495,7 +349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concept-overview/concept_license/" class="md-nav__link">
+      <a href="../../concept-overview/concept_license/" class="md-nav__link">
         Software Licenses
       </a>
     </li>
@@ -543,7 +397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../run/run_docker/" class="md-nav__link">
+      <a href="../../run/run_docker/" class="md-nav__link">
         Run on Docker
       </a>
     </li>
@@ -591,7 +445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../architecture/architecture_components/" class="md-nav__link">
+      <a href="../../architecture/architecture_components/" class="md-nav__link">
         Components
       </a>
     </li>
@@ -605,7 +459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../architecture/architecture_concept/" class="md-nav__link">
+      <a href="../../architecture/architecture_concept/" class="md-nav__link">
         Conceptual details
       </a>
     </li>
@@ -619,7 +473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../architecture/architecture_startup-cfg-flow/" class="md-nav__link">
+      <a href="../../architecture/architecture_startup-cfg-flow/" class="md-nav__link">
         Startup & Config Flow
       </a>
     </li>
@@ -639,12 +493,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -665,11 +521,93 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../reference/reference_build/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Build Commands
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Build Commands
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#build-configuration-file" class="md-nav__link">
+    Build Configuration File
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-command-line" class="md-nav__link">
+    Build Command Line
+  </a>
+  
+    <nav class="md-nav" aria-label="Build Command Line">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-options" class="md-nav__link">
+    Configuration Options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-specific-options" class="md-nav__link">
+    Build specific Options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-options" class="md-nav__link">
+    Software Options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reference-build-usage" class="md-nav__link">
+    Reference: Build Usage
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -681,7 +619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/reference_environment-vars/" class="md-nav__link">
+      <a href="../reference_environment-vars/" class="md-nav__link">
         Runtime Variables
       </a>
     </li>
@@ -695,7 +633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/reference_startscript/" class="md-nav__link">
+      <a href="../reference_startscript/" class="md-nav__link">
         Domino Start Script
       </a>
     </li>
@@ -743,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../howto/howto_docker-linux/" class="md-nav__link">
+      <a href="../../howto/howto_docker-linux/" class="md-nav__link">
         Docker on Linux
       </a>
     </li>
@@ -757,7 +695,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../howto/howto_docker-run/" class="md-nav__link">
+      <a href="../../howto/howto_docker-run/" class="md-nav__link">
         Run Image on Docker
       </a>
     </li>
@@ -771,7 +709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../howto/howto_docker-wsl/" class="md-nav__link">
+      <a href="../../howto/howto_docker-wsl/" class="md-nav__link">
         Docker on WSL2
       </a>
     </li>
@@ -785,7 +723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../howto/howto_download-software/" class="md-nav__link">
+      <a href="../../howto/howto_download-software/" class="md-nav__link">
         Download Software
       </a>
     </li>
@@ -799,7 +737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../howto/howto_github/" class="md-nav__link">
+      <a href="../../howto/howto_github/" class="md-nav__link">
         Get GitHub project
       </a>
     </li>
@@ -825,77 +763,148 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/SmartCloud-y/domino-container/tree/develop/edit/master/docs/quickstart.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/SmartCloud-y/domino-container/tree/develop/edit/master/docs/reference/reference_build.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-  <h1>Quickstart</h1>
+<h1 id="build-command-documentation">Build Command Documentation<a class="headerlink" href="#build-command-documentation" title="Permanent link">&para;</a></h1>
+<p>The <code>build.sh</code> command is used as the main entry point for building Domino, Traveler and Volt images.
+Using the the build command line and configuration file the build operation can be customized.</p>
+<p>The only required parameter is the product to install.</p>
+<p>Example: Build the latest Domino container image:</p>
+<div class="highlight"><pre><span></span><code>./build.sh domino
+</code></pre></div>
+<h2 id="build-configuration-file">Build Configuration File<a class="headerlink" href="#build-configuration-file" title="Permanent link">&para;</a></h2>
+<p>The build configuration can be used to define the download location for HCL software.</p>
+<ul>
+<li>
+<p><code>DOWNLOAD_FROM=http://192.168.96.170/software</code><br />
+  Defines a remote location to download software from.
+  This could be any type of HTTP/HTTPS resource for example a Nexus server.</p>
+</li>
+<li>
+<p><code>SOFTWARE_DIR=/local/software</code><br />
+  You can also copy all required software download to a directory and specify the download location.
+  The build process automatically starts a temporary Docker container leveraging <a href="https://hub.docker.com/_/nginx">NGINX container</a> the data for the Docker build process.</p>
+</li>
+<li>
+<p><code>LinuxYumUpdate=no</code><br />
+  Disable updating Linux in the build process</p>
+</li>
+<li>
+<p><code>SPECIAL_CURL_ARGUMENTS="--no-check-certificate"</code><br />
+  Additional parameters to pass to the CURL download command.
+  For example disable certificate check for untrusted sources</p>
+</li>
+</ul>
+<h2 id="build-command-line">Build Command Line<a class="headerlink" href="#build-command-line" title="Permanent link">&para;</a></h2>
+<p>The fist option is always the product to install.
+It can be followed by a specific version to install.
+Note: If you specify an explicit version, the "latest" tag is not set automatically.</p>
+<p>Example:
+<div class="highlight"><pre><span></span><code>./build.sh domino 12.0.1 FP1
+</code></pre></div></p>
+<h3 id="configuration-options">Configuration Options<a class="headerlink" href="#configuration-options" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>cfg</strong><br />
+  Opens the build configuration</p>
+</li>
+<li>
+<p><strong>cpcfg</strong><br />
+  Copies the configuration document to a standard location<br />
+  (specified via DOMINO_DOCKER_CFG_DIR, default: /local/cfg)</p>
+</li>
+</ul>
+<h3 id="build-specific-options">Build specific Options<a class="headerlink" href="#build-specific-options" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>-checkonly</strong><br />
+  Checks only if all software is available without starting the build process. This is helpful to prepare a build.</p>
+</li>
+<li>
+<p><strong>-verifyonly</strong><br />
+  Checks if all software is availabe and the checksum matches.</p>
+</li>
+<li>
+<p><strong>-nocheck</strong> / <strong>-check</strong><br />
+  Explicitly enables or disables checking if all software exists (default: yes)</p>
+</li>
+<li>
+<p><strong>-noverify</strong> / <strong>-verify</strong><br />
+  Explicitly enables verification of software (default: no)</p>
+</li>
+<li>
+<p><strong>-nolinuxupd</strong> / <strong>-linuxpd</strong><br />
+  Overwrites default for updating the downloaded Linux image during build.<br />
+  By default updates are installed by any build operation and images are build without leveraging cache to ensure the image is up to date.</p>
+</li>
+<li>
+<p><strong>-from=imagename</strong><br />
+  Use a specific base image for installation.<br />
+  This can be a prebuild environment or an alternate Linux base image<br />
+  There are a couple of predfined images, which can be referenced by their short name</p>
+</li>
+<li>
+<p><strong>-tag=imagename</strong><br />
+  Tag image additionally with this tag after build</p>
+</li>
+<li>
+<p><strong>-push=imagename</strong><br />
+  Tag image and push it after build</p>
+</li>
+</ul>
+<h3 id="software-options">Software Options<a class="headerlink" href="#software-options" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>-volt=version</strong><br />
+  Installs specified HCL Volt version.<br />
+  If invoked without version parameter, latest version will be installed</p>
+</li>
+<li>
+<p><strong>-capi=version</strong><br />
+  Installs specified C-API SDK version.<br />
+  If invoked without version parameter, latest version will be installed</p>
+</li>
+<li>
+<p><strong>-startscript=version</strong><br />
+  Installs specified Start Script version.<br />
+  By default the latest start script included in the project will be installed.<br />
+  Useful when switching to specific or custom start script version.</p>
+</li>
+</ul>
+<h3 id="reference-build-usage">Reference: Build Usage<a class="headerlink" href="#reference-build-usage" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Usage: build.sh { domino | traveler | volt } version fp hf
 
-<p>The default configuration should work for most environments.<br />
-For special requirements check the documentation for details.</p>
-<h2 id="ensure-you-have-a-supported-build-environment">Ensure you have a supported build environment<a class="headerlink" href="#ensure-you-have-a-supported-build-environment" title="Permanent link">&para;</a></h2>
-<p>The project supports most Unix base environments including <a href="https://docs.microsoft.com/en-us/windows/wsl/">Windows Subsystem for Linux 2 WSL2</a></p>
-<p>For details check <a href="concept_environments.md">supported run-time and build environments</a></p>
-<h2 id="clone-this-project-via-git">Clone this project via Git<a class="headerlink" href="#clone-this-project-via-git" title="Permanent link">&para;</a></h2>
-<h3 id="install-git-software">Install Git software<a class="headerlink" href="#install-git-software" title="Permanent link">&para;</a></h3>
-<p>Git is a very simple and convenient way to download from GitHub.
-The install command depends on the platform (SUSE: zypper, Ubuntu: apt).
-"yum" works for any Redhat/CentOS based distribution.</p>
-<div class="highlight"><pre><span></span><code>yum install git -y
+-checkonly      checks without build
+-verifyonly     checks download file checksum without build
+-(no)check      checks if files exist (default: yes)
+-(no)verify     checks downloaded file checksum (default: no)
+-(no)url        shows all download URLs, even if file is downloaded (default: no)
+-(no)linuxupd   updates container Linux  while building image (default: yes)
+cfg|config      edits config file (either in current directory or if created in home dir)
+cpcfg           copies standard config file to config directory (default: /root/DominoDocker/build.cfg)
+
+-tag=&lt;image&gt;    additional image tag
+-push=&lt;image&gt;   tag and push image to registry
+
+Add-On options
+
+-from=&lt;image&gt;   builds from a specified build image. there are named images like &#39;ubi&#39; predefined
+-openssl        adds OpenSSL to Domino image
+-borg           adds borg client and Domino Borg Backup integration to image
+-verse          adds the latest verse version to a Domino image
+-capi           adds the C-API sdk/toolkit to a Domino image
+-k8s-runas      adds K8s runas user support
+-startscript=x  installs specified start script version from software repository
+
+Examples:
+
+  build.sh domino 12.0.1 if1
+  build.sh traveler 12.0.1
 </code></pre></div>
-<h3 id="create-new-main-directory-for-the-project">Create new main directory for the project<a class="headerlink" href="#create-new-main-directory-for-the-project" title="Permanent link">&para;</a></h3>
-<p>Create a directory where to download Git projects and switch to it.</p>
-<p>Example:</p>
-<div class="highlight"><pre><span></span><code>mkdir -p /local/github
-cd /local/github
-</code></pre></div>
-<h3 id="clone-the-repository-and-switch-to-the-directory">Clone the repository and switch to the directory<a class="headerlink" href="#clone-the-repository-and-switch-to-the-directory" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>git clone https://github.com/HCL-TECH-SOFTWARE/domino-container.git 
-cd domino-container
-</code></pre></div>
-<h2 id="download-software-from-flexnet">Download software from Flexnet<a class="headerlink" href="#download-software-from-flexnet" title="Permanent link">&para;</a></h2>
-<p>Before starting the build process, the required HCL web-kits have to be available on the build machine or a remote download location - if configured.  </p>
-<p>See howto <a href="howto_download-software.md">download software</a> for details downloading software from Flexnet.</p>
-<h2 id="build-the-image">Build the image<a class="headerlink" href="#build-the-image" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>./build domino
-</code></pre></div>
-<h2 id="run-container-domino-container-script">Run container Domino Container Script<a class="headerlink" href="#run-container-domino-container-script" title="Permanent link">&para;</a></h2>
-<p>The Nash!Com Domino container script allows you to operate your server. It supports Docker and Podman run-time environments.</p>
-<h3 id="install-domino-container-script">Install Domino Container script<a class="headerlink" href="#install-domino-container-script" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>../start_script/install_domino_container
-</code></pre></div>
-<h3 id="configure-your-container">Configure your container<a class="headerlink" href="#configure-your-container" title="Permanent link">&para;</a></h3>
-<p>The project provides a default configuration.
-Usually the default configuration should work for your environment.
-You might want to change the container name and other detailed settings.</p>
-<div class="highlight"><pre><span></span><code>domino_container cfg
-</code></pre></div>
-<p><strong>Note:</strong> The container script by default uses <code>vi</code> for editing.
-If you prefer a different editor like <code>nano</code> or <code>mcedit</code> export an environment variable specifying an installed editor of your choice.
-Tip: You can also add the variable to your bash profile.</p>
-<div class="highlight"><pre><span></span><code>export EDIT_COMMAND=nano
-</code></pre></div>
-<h3 id="configure-container-setup">Configure container setup<a class="headerlink" href="#configure-container-setup" title="Permanent link">&para;</a></h3>
-<p>Usually environment variables are used for setup.
-The following commands opens the environment file, configured for your container.</p>
-<div class="highlight"><pre><span></span><code>domino_container env
-</code></pre></div>
-<h2 id="start-domino-container">Start Domino container<a class="headerlink" href="#start-domino-container" title="Permanent link">&para;</a></h2>
-<p>After specifying the configuration and setup correctly, start the container with the Domino container script.</p>
-<div class="highlight"><pre><span></span><code>domino_container start
-</code></pre></div>
-<h3 id="domino-live-console">Domino live console<a class="headerlink" href="#domino-live-console" title="Permanent link">&para;</a></h3>
-<p>To start a Domino live console, run the console command.
-The domino_container script leverages and <code>exec</code> command into the container.
-The long version of this command would be <code>domino_container domino console</code>.</p>
-<p>All console commands can be executed via <code>domino</code>.
-This command passes command line parameters to the <code>domino</code> start script.</p>
-<div class="highlight"><pre><span></span><code>domino_container console
-</code></pre></div>
-<h2 id="domino-container-script-diagram">Domino Container Script Diagram<a class="headerlink" href="#domino-container-script-diagram" title="Permanent link">&para;</a></h2>
-<p><img alt="domino_container script diagram" src="../plantuml/out/containerstartscript.svg" /></p>
 
               
             </article>
@@ -908,15 +917,30 @@ This command passes command line parameters to the <code>domino</code> start scr
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
+        
+        <a href="../../architecture/architecture_startup-cfg-flow/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Startup &amp; Config Flow" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Startup & Config Flow
+            </div>
+          </div>
+        </a>
+      
       
         
-        <a href="../concept-overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Concept &amp; Overview" rel="next">
+        <a href="../reference_environment-vars/" class="md-footer__link md-footer__link--next" aria-label="Next: Runtime Variables" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Concept & Overview
+              Runtime Variables
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -941,10 +965,10 @@ This command passes command line parameters to the <code>domino</code> start scr
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "toc.follow"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "toc.follow"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>
