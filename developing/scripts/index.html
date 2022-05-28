@@ -1,0 +1,672 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="HCL Domino community container image">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
+    
+    
+      
+        <title>Documentation of Components - Domino Container</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c382b1dc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ffffff">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="white" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#documentation-of-components" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Domino Container" class="md-header__button md-logo" aria-label="Domino Container" data-md-component="logo">
+      
+  <img src="../../assets/domino.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Domino Container
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Documentation of Components
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/SmartCloud-y/domino-container/tree/develop" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Domino Container" class="md-nav__button md-logo" aria-label="Domino Container" data-md-component="logo">
+      
+  <img src="../../assets/domino.svg" alt="logo">
+
+    </a>
+    Domino Container
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/SmartCloud-y/domino-container/tree/develop" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Domino Docker
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Architecture
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Architecture" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Architecture
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/concept/" class="md-nav__link">
+        Conceptual details
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/run-config-startup-flow/" class="md-nav__link">
+        Domino Docker Startup and Configuration Flow
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Developing
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Developing" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Developing
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../build/" class="md-nav__link">
+        Build Command Documentation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Documentation of Components
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Documentation of Components
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#buildsh" class="md-nav__link">
+    build.sh
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#directory-software" class="md-nav__link">
+    Directory "software"
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#directory-dockerfiles" class="md-nav__link">
+    Directory "dockerfiles"
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../startscript/" class="md-nav__link">
+        Domino on Unix/Linux Start Script
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Run
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Run" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Run
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../run/image/" class="md-nav__link">
+        Image
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../run/management/" class="md-nav__link">
+        Management Script
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../run/run-variables/" class="md-nav__link">
+        Run variables
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../run/supported-environments/" class="md-nav__link">
+        Supported Environments
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/SmartCloud-y/domino-container/tree/develop/edit/master/docs/developing/scripts.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h1 id="documentation-of-components">Documentation of Components<a class="headerlink" href="#documentation-of-components" title="Permanent link">&para;</a></h1>
+<h2 id="buildsh">build.sh<a class="headerlink" href="#buildsh" title="Permanent link">&para;</a></h2>
+<p>This is the main start point for building docker images.
+You can specify the image to build.</p>
+<p>Currently supported are the following images</p>
+<ul>
+<li>domino - Domino 11.x including current fixpacks</li>
+<li>traveler - Traveler 11.0.1.x including current fixepack</li>
+<li>volt - HCL Domino Volt 1.x</li>
+</ul>
+<p>We are constantly updating the software.txt repository file with current software releases.
+Unless you specify a distinct version the current version will be installed and tagged as "latest".</p>
+<p>Inside this script you can configure a remote download http target if you are hosting the downloaded software on a different machine.
+You can also specify a download directoy on your Docker host which will be served by a temporary Docker container running a NGINX server to provide the software.</p>
+<p>The following three options are available
+1. Remote Download specified with example: DOWNLOAD_FROM=http://192.168.1.1
+2. Local directory specified with example: SOFTWARE_DIR=/local/software hosted via NGINX server
+3. Standard location in the software sub-directory hosted via NGINX server in temporary container</p>
+<p>Before you start you have to download the required software packages.</p>
+<h2 id="directory-software">Directory "software"<a class="headerlink" href="#directory-software" title="Permanent link">&para;</a></h2>
+<p>This directory is the default directory to provide Domino software, which are downloaded by the Docker installation script.
+The build script checks if your selected software is available on the defined software location and will prompt you which package to download if missing.
+All HCL customers (and business partners with the <a href="https://www.hcltechsw.com/resources/partner-connect/resources/partner-pack">Partner Pack</a> should have a download account for <a href="https://hclsoftware.flexnetoperations.com/flexnet/operationsportal">HCL Flexnet software portal</a>.
+We try to point you to the right files on the Flexnet Download site where possible.</p>
+<h2 id="directory-dockerfiles">Directory "dockerfiles"<a class="headerlink" href="#directory-dockerfiles" title="Permanent link">&para;</a></h2>
+<p>This directory contains a sub-directory for each product that can be installed.</p>
+<p>The domino directory contains all files needed to install a HCL Domino server</p>
+<h1 id="build_dominosh">build_domino.sh<a class="headerlink" href="#build_dominosh" title="Permanent link">&para;</a></h1>
+<p>Build file used to build the HCL Domino server.
+This script invokes the actual docker build command</p>
+<p>dockerfile</p>
+<p>The default dockerfile is based on centos:7.
+It contains just the basic logic required for a dockerfile.
+All install logic is covered in a separate install script.</p>
+<p>The project supports alternate dockerfiles for different base images like CentOS 8 and the <a href="https://www.redhat.com/en/blog/introducing-red-hat-universal-base-image">Redhat Universal Baseimage (UBI)</a></p>
+<h2 id="directory-instal_dir">Directory "instal_dir"<a class="headerlink" href="#directory-instal_dir" title="Permanent link">&para;</a></h2>
+<p>This directory contains files and scripts to build the Docker image.
+Those files are copied to /tmp/install_dir during install process and are invoked by the build process.</p>
+<h1 id="install_dominosh">install_domino.sh<a class="headerlink" href="#install_dominosh" title="Permanent link">&para;</a></h1>
+<p>This file contains the install logic and performs the actual install of all components after downloading the software.</p>
+<h2 id="softwaretxt">software.txt<a class="headerlink" href="#softwaretxt" title="Permanent link">&para;</a></h2>
+<p>This file contains information about the download you have to download depending on what you install.
+This file is used to find the right file to download by product and version. And is also used to verify the downloaded image via SHA256 hash.</p>
+<p>The format of the file is as follows:</p>
+<p>product|version|filename|product-code|sha256-hash</p>
+<p>Example:
+<div class="highlight"><pre><span></span><code>domino<span class="p">|</span><span class="m">10</span>.0.1<span class="p">|</span>DOM_SVR_V10.0.1_64_BIT_Lnx.tar<span class="p">|</span>CNXL9EN<span class="p">|</span>57a19f56da492740d50457bcb3eec6f2b5410e8e122608c19e1886cf3fb36515
+</code></pre></div></p>
+<h2 id="software_dir_sha256txt">software_dir_sha256.txt<a class="headerlink" href="#software_dir_sha256txt" title="Permanent link">&para;</a></h2>
+<p>Helper file which contains the checksums build by sha256sum.
+The content of this file is added to software.txt</p>
+<h2 id="domino_install_data_prepsh">domino_install_data_prep.sh<a class="headerlink" href="#domino_install_data_prepsh" title="Permanent link">&para;</a></h2>
+<p>Helper script to compact install databases and templates (brings them to current ODS, enables compression and releases free space).</p>
+<h2 id="domino_docker_entrypointsh">domino_docker_entrypoint.sh<a class="headerlink" href="#domino_docker_entrypointsh" title="Permanent link">&para;</a></h2>
+<p>[located in / owned by root]
+This script is the main entry point started when the container is started.
+It contains the logic to start and stop the server.
+And it also contains the logic triggered at first server start to invoke the configuration of the server.</p>
+<h2 id="docker_prestartsh">docker_prestart.sh<a class="headerlink" href="#docker_prestartsh" title="Permanent link">&para;</a></h2>
+<p>[located in /domino-docker/scripts owned by root]
+This script is invoked by the entry-point script to check which additional configuration is needed before the server is started for the first time.</p>
+<h2 id="domino_install_data_copysh">domino_install_data_copy.sh<a class="headerlink" href="#domino_install_data_copysh" title="Permanent link">&para;</a></h2>
+<p>[located in /domino-docker/scripts owned by root]
+This script is invoked by the entry-point script to check if templates and other files have been updated by an image update.</p>
+<h2 id="domino_docker_healthchecksh">domino_docker_healthcheck.sh<a class="headerlink" href="#domino_docker_healthchecksh" title="Permanent link">&para;</a></h2>
+<p>[located in / owned by root]
+This script is used to check the server health to update the status of the running container.
+The current implementation just checks if the server process is running ( for Traveler if the traveler process is running).
+You can customize this script for your needs. But usually server availability can be checked outside the server.</p>
+<h2 id="start_scripttar">start_script.tar<a class="headerlink" href="#start_scripttar" title="Permanent link">&para;</a></h2>
+<p>Nash!Com Domino start and management script which supports Docker and contains an installation routine which is Docker aware</p>
+<h2 id="domino10_responsedat">domino10_response.dat<a class="headerlink" href="#domino10_responsedat" title="Permanent link">&para;</a></h2>
+<p>Response file used for silent server installation</p>
+<ul>
+<li>SetupProfile.pds</li>
+<li>signWithAdminP.sh</li>
+<li>DatabaseSigner.jar</li>
+</ul>
+<p>Used to configure the Domino Server (see separate documentation)</p>
+<h2 id="directory-dockerfilestraveler">Directory "dockerfiles/traveler"<a class="headerlink" href="#directory-dockerfilestraveler" title="Permanent link">&para;</a></h2>
+<p>This directory is very similar to the domino directory and ins used to install a Traveler server based on an existing Domino image.
+It uses very similar logic but is less complex than the Domino install logic, because it just leverages the base that The Domino images builds. </p>
+<h2 id="directory-dockerfilesvolt">Directory "dockerfiles/volt"<a class="headerlink" href="#directory-dockerfilesvolt" title="Permanent link">&para;</a></h2>
+<p>This directory provides HCL Volt as another add-on for Domino, which is also based on the Domino image.</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../build/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Build Command Documentation" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Build Command Documentation
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../startscript/" class="md-footer__link md-footer__link--next" aria-label="Next: Domino on Unix/Linux Start Script" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Domino on Unix/Linux Start Script
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "toc.integrate", "toc.follow"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a6c66575.min.js"></script>
+      
+    
+  </body>
+</html>
